@@ -19,7 +19,7 @@ jobs:
       - name: Fetch data
         uses: githubocto/flat@v3
         with:
-          http_url: https://www.tiktok.com/api/search/suggest/guide/?aid=1988&browser_language=de-DE
+          http_url: https://www.tiktok.com/api/search/suggest/guide/?WebIdLastTime=1703865669&aid=1988&app_language=de-DE&app_name=tiktok_web&browser_language=de-DE&browser_name=Mozilla&browser_online=true&browser_platform=MacIntel&browser_version=5.0%20%28Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&current_placeholder=&device_id=7318047291348076064&device_platform=web_pc&focus_state=true&from_group_id=7293985318494031136&from_page=&history_len=2&history_list_v2=%25255B%25255D&is_fullscreen=false&is_page_visible=true&os=mac&priority_region=&referer=&region=DE&req_source=web_blank_page&screen_height=1169&screen_width=1800&tz_name=Europe%2FBerlin&webcast_language=de-DE
           downloaded_filename: search-suggestions_DE.json
       - name: Fetch data
         uses: githubocto/flat@v3
