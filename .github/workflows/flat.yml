@@ -1,7 +1,7 @@
 name: data
 on:
   schedule:
-    - cron: 0 0 * * *
+    - cron: 0 * * * *
   workflow_dispatch: {}
   push:
     paths:
@@ -16,3 +16,13 @@ jobs:
           deno-version: v1.10.x
       - name: Check out repo
         uses: actions/checkout@v2
+      - name: Fetch data
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://www.tiktok.com/api/search/suggest/guide/?aid=1988&language=de-DE
+          downloaded_filename: search-suggestions_DE.json
+      - name: Fetch data
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://www.tiktok.com/api/search/suggest/guide/?aid=1988
+          downloaded_filename: search-suggestions.json
