@@ -19,7 +19,7 @@ jobs:
       - name: Fetch data
         uses: githubocto/flat@v3
         with:
-          http_url: https://www.tiktok.com/api/search/suggest/guide/?aid=1988&language=de-DE
+          http_url: https://www.tiktok.com/api/search/suggest/guide/?aid=1988&app_language=de-DE
           downloaded_filename: search-suggestions_DE.json
       - name: Fetch data
         uses: githubocto/flat@v3
